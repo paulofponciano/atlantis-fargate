@@ -1,0 +1,19 @@
+env_prefix  = "atlantis"
+environment = "staging"
+tags = {
+  Terraform = "true"
+  Owner     = "DevOps Team"
+  Env       = "staging"
+}
+aws_region                 = "us-east-2"
+azs                        = ["us-east-2a", "us-east-2b"]
+site_domain                = "atlantis.sevira.cloud"
+vpc_cidr                   = "10.1.0.0/16"
+public_subnet_cidrs        = ["10.1.32.0/20", "10.1.48.0/20"]
+private_subnet_cidrs       = ["10.1.64.0/20", "10.1.80.0/20"]
+atlantis_github_user       = "github-user"
+atlantis_github_user_token = "GH_PAT"
+github_owner               = "github-owner"
+github_webhook_secret      = "REPO_WEBHOOK"
+atlantis_repo_allowlist    = "github.com/user/*"
+repositories               = ["repo-name"]
